@@ -28,3 +28,11 @@ Symbols not available. Dumping unresolved backtrace:
 	0x7fff60977374
 	0x7fff61f5cc91
 
+2026-03-10 19:38:56,137 - anyida_scraper - INFO - Initializing database at data\anyida.db
+2026-03-10 19:38:56,153 - anyida_scraper - INFO - Database initialized successfully.
+2026-03-10 19:38:56,155 - anyida_scraper - INFO - Fetching http://jiji.ng/mobile-phones via HTTP...
+2026-03-10 19:39:04,876 - anyida_scraper - ERROR - HTTP fetch error for http://jiji.ng/mobile-phones: Failed to perform, curl: (7) Failed to connect to jiji.ng port 443 after 7879 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2026-03-10 19:39:04,878 - anyida_scraper - WARNING - Retrying fetch_http after error: Failed to perform, curl: (7) Failed to connect to jiji.ng port 443 after 7879 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2026-03-10 19:39:05,880 - anyida_scraper - INFO - Fetching http://jiji.ng/mobile-phones via HTTP...
+2026-03-10 19:39:07,788 - anyida_scraper - WARNING - HTTP 403 Forbidden for http://jiji.ng/mobile-phones (Cloudflare?)
+2026-03-10 19:39:07,790 - anyida_scraper - INFO - Fetching http://jiji.ng/mobile-phones via Browser...

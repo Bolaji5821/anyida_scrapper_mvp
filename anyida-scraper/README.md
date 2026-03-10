@@ -13,11 +13,36 @@ A robust scraping system for Jiji.ng built with Python, Celery, and SeleniumBase
 
 ## Prerequisites
 
-- Python 3.11+
-- Redis (for task queue)
-- Google Chrome (for browser automation)
+- Docker and Docker Compose
 
-## Setup
+## Quick Start (Docker)
+
+1.  **Build and Start Services**:
+    ```bash
+    docker-compose up --build -d
+    ```
+    This starts Redis and the Celery Worker in the background.
+
+2.  **Run the Scheduler**:
+    Trigger the scraping job by running the scheduler container:
+    ```bash
+    docker-compose run scheduler
+    ```
+
+3.  **Check Logs**:
+    Watch the worker logs to see the scraping progress:
+    ```bash
+    docker-compose logs -f worker
+    ```
+
+4.  **Verify Data**:
+    You can inspect the SQLite database or check the logs for "Saved X new items".
+    To verify data inside the container:
+    ```bash
+    docker-compose exec worker python -c "import sqlite3; conn = sqlite3.connect('data/anyida.db'); print(conn.execute('SELECT COUNT(*) FROM listings').fetchone()[0]);"
+    ```
+
+## Local Development (Without Docker)
 
 1. **Install Dependencies**:
    ```bash
@@ -37,14 +62,6 @@ A robust scraping system for Jiji.ng built with Python, Celery, and SeleniumBase
    ```bash
    python app/scheduler.py
    ```
-
-## Docker
-
-Run the full stack with Docker Compose:
-
-```bash
-docker-compose up --build
-```
 
 ## Project Structure
 

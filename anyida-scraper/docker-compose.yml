@@ -19,7 +19,7 @@ services:
       - PYTHONPATH=/app
     depends_on:
       - redis
-    # To run browser in docker, we need more setup (e.g. shared memory)
+    
     shm_size: '2gb' 
 
   scheduler:
