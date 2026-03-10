@@ -1,6 +1,5 @@
 celery
 redis
-seleniumbase
 playwright
 beautifulsoup4
 requests
