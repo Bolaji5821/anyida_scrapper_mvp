@@ -1,0 +1,30 @@
+2026-03-10 18:59:10,637 - anyida_scraper - INFO - Initializing database at data\anyida.db
+2026-03-10 18:59:10,918 - anyida_scraper - INFO - Database initialized successfully.
+2026-03-10 18:59:10,969 - anyida_scraper - INFO - Fetching https://jiji.ng/mobile-phones via HTTP...
+2026-03-10 18:59:12,073 - anyida_scraper - WARNING - HTTP 403 Forbidden for https://jiji.ng/mobile-phones (Cloudflare?)
+2026-03-10 18:59:12,077 - anyida_scraper - INFO - Fetching https://jiji.ng/mobile-phones via Browser...
+2026-03-10 19:04:21,844 - anyida_scraper - ERROR - Browser fetch error for https://jiji.ng/mobile-phones: Message: session not created: cannot connect to chrome at 127.0.0.1:9222
+from chrome not reachable; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff72516aa55
+	0x7ff724ec8630
+	0x7ff724c5d546
+	0x7ff724c4dd8a
+	0x7ff724ca450b
+	0x7ff724c98cee
+	0x7ff724cefc51
+	0x7ff724cef4b6
+	0x7ff724ca9098
+	0x7ff724ca9f83
+	0x7ff725197810
+	0x7ff725191afd
+	0x7ff7251b2c1a
+	0x7ff724ee3345
+	0x7ff724eeb81c
+	0x7ff724ed1924
+	0x7ff724ed1ad6
+	0x7ff724eb7e47
+	0x7fff60977374
+	0x7fff61f5cc91
+

@@ -1,0 +1,10 @@
+celery
+redis
+seleniumbase
+playwright
+beautifulsoup4
+requests
+python-dotenv
+tenacity
+fake-useragent
+curl_cffi
